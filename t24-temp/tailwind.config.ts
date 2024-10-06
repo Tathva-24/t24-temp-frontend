@@ -34,7 +34,10 @@ const config = {
       },
     },
     extend: {
-      fontFamily: { kodeMono: ["Kode Mono", "monospace"] },
+      fontFamily: {
+        kodeMono: ["Kode Mono", "monospace"],
+        jakarta: ["Plus Jakarta Sans", "system-ui"],
+      },
       colors: {
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
