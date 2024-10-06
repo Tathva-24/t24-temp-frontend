@@ -8,11 +8,7 @@ interface NavElemProps {
   onClick?: () => void;
 }
 
-export const NavElem: React.FC<NavElemProps> = ({
-  title,
-  description,
-  onClick,
-}) => {
+export const NavElem: React.FC<NavElemProps> = ({ title, onClick }) => {
   return (
     <div
       className="bg-[#CACDF8] hover:bg-white w-[10vw] h-[2.5vw] p-4 shadow-md cursor-pointer flex justify-center items-center text-center transition-colors duration-100"
