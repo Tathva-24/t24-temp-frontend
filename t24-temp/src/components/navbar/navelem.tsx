@@ -21,7 +21,9 @@ export const NavElem: React.FC<NavElemProps> = ({
         clipPath: "polygon(0 0, 90% 0%, 100% 40%, 100% 100%, 10% 100%, 0 60%)",
       }}
     >
-      <h2 className="text-xl font-bold text-black text-center">{title}</h2>
+      <h2 className="text-[1.2rem] font-bold text-black font-jakarta text-center">
+        {title}
+      </h2>
     </div>
   );
 };
