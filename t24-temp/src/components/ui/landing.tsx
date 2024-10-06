@@ -10,7 +10,6 @@ export default function Landing() {
           <p>24 OCT</p>
           <p>25 OCT</p>
           <p>26 OCT</p>
-          <p>76 OCT</p>
         </div>
       </div>
     </>
