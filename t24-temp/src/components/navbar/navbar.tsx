@@ -8,7 +8,7 @@ export const NavBar: React.FC = () => {
   };
 
   return (
-    <nav className="fixed top-0 left-0 w-full z-[99] flex justify-center py-4">
+    <nav className="fixed top-0 left-0 w-full z-[99] flex justify-center py-4 mt-[7vh]">
       <div className="flex space-x-8">
         <NavElem title="HOME" onClick={() => handleClick("HOME")} />
         <NavElem title="WORKSHOP" onClick={() => handleClick("WORKSHOP")} />
