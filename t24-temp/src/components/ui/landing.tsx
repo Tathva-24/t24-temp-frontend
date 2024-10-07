@@ -20,7 +20,7 @@ export default function Landing() {
           </h1>
 
           <h2 ref={comingSoonTextRef} className={styles.letters}>
-            Coming-Soon
+            Coming Soon
           </h2>
         </div>
 
