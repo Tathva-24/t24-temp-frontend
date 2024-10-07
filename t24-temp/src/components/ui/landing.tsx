@@ -1,69 +1,11 @@
 "use client";
-import { useEffect, useRef, useState } from "react";
-import { gsap } from "gsap";
-  import Navbar from "../navbar/navbar";
+import { useRef } from "react";
+import Navbar from "../navbar/navbar";
 import styles from "./landing.module.css";
 
 export default function Landing() {
   const tathvaTextRef = useRef<HTMLHeadingElement | null>(null);
   const comingSoonTextRef = useRef<HTMLHeadingElement | null>(null);
-  const [init, setInit] = useState(false);
-
-  useEffect(() => {
-    // Function to split text and wrap in span tags
-    function breakText(ref: React.RefObject<HTMLHeadingElement | null>) {
-      const h1 = ref.current;
-      if (h1) {
-        const text = h1.textContent || "";
-        const split = text.split("");
-        let newText = "";
-
-        split.forEach(function (char) {
-          newText += `<span class="${styles.a}">${char}</span>`;
-        });
-
-        h1.innerHTML = newText;
-      }
-    }
-
-    breakText(tathvaTextRef);
-    breakText(comingSoonTextRef);
-
-    // GSAP animation timeline with repeat
-    const tl = gsap.timeline({ repeat: -1, repeatDelay: 2 });
-
-    tl.from(`.${styles.a}`, {
-      opacity: 1,
-      y: 0,
-      duration: 0.5,
-      stagger: 0.15,
-      ease: "power3.out",
-    }).to(
-      `.${styles.a}`,
-      {
-        opacity: 0,
-        y: -80,
-        duration: 0.5,
-        stagger: 0.15,
-        ease: "power3.in",
-      },
-      "+=0.5"
-    );
-
-    tl.fromTo(
-      `.${styles.a}`,
-      { y: -80, opacity: 0 },
-      {
-        y: 0,
-        delay: 1.5,
-        opacity: 1,
-        duration: 0.5,
-        stagger: 0.15,
-        ease: "power3.out",
-      },
-      "+=0.0"
-    );
-  }, []);
 
   return (
     <div className={styles.main}>
