@@ -1,3 +1,5 @@
+// @ts-ignore
+
 "use client";
 import { HeroHighlight } from "../components/ui/hero-highlight";
 import { Analytics } from "@vercel/analytics/react";
