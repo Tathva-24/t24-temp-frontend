@@ -12,7 +12,6 @@ export default function Landing() {
       {/* Navbar */}
       <Navbar />
 
-      {/* Landing Page Content */}
       <div className={styles.landing}>
         <div className={styles.item1}>
           <h1 ref={tathvaTextRef} className={styles.letters}>
