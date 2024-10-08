@@ -4,7 +4,7 @@ import styles from './navbar2.module.css';
 import Link from 'next/link';
 import { gsap } from 'gsap';
 
-export default function Navbar2() {
+export default function Navbar2Black() {
   const [isOpen, setIsOpen] = useState(false);
   const menuRef = useRef(null);
 

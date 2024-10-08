@@ -3,7 +3,7 @@
 import React, { useState, ChangeEvent, FormEvent } from 'react';
 import Navbar from '../../components/navbar/navbar';
 import { HeroHighlight } from "../../components/ui/hero-highlight";
-import Navbar2 from '@/components/Navbar2/Navbar2';
+import Navbar2Black from '@/components/Navbar2Black/Navbar2Black';
 
 interface FormData {
   name: string;
@@ -37,7 +37,7 @@ export default function Contact() {
       {/* Navbar */}
     
         {/* <Navbar /> */}
-        <Navbar2 />
+        <Navbar2Black />
      
 
       {/* Content section with scrollable behavior */}

@@ -4,6 +4,8 @@ import React from "react";
 import Card from '../workshop/Card/Card'
 import styles from '../workshop/page.module.css'
 import Navbar from '../../components/navbar/navbar'
+
+import Navbar2Black from "@/components/Navbar2Black/Navbar2Black";
 const workshops = [
   {
     image: "/poster.png",
@@ -75,7 +77,7 @@ const workshops = [
 export default function Workshop() {
   return (
     <>
-      {/* <Navbar /> */}
+      <Navbar2Black />
       <div className={styles.container}>
         <h1 className={styles.title}>LECTURES</h1>
 

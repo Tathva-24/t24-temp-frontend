@@ -7,7 +7,7 @@ import Landing from "@/components/ui/landing";
 export default function Home() {
   return (
     <div className="w-screen justify-center items-center overflow-x-hidden ">
-    <HeroHighlight>
+    <HeroHighlight >
       <Landing />
     </HeroHighlight>
     </div>
