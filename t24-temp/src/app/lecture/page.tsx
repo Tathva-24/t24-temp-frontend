@@ -75,7 +75,7 @@ const workshops = [
 export default function Workshop() {
   return (
     <>
-      <Navbar />
+      {/* <Navbar /> */}
       <div className={styles.container}>
         <h1 className={styles.title}>LECTURES</h1>
 

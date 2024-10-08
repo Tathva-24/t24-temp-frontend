@@ -3,6 +3,7 @@
 import React, { useState, ChangeEvent, FormEvent } from 'react';
 import Navbar from '../../components/navbar/navbar';
 import { HeroHighlight } from "../../components/ui/hero-highlight";
+import Navbar2 from '@/components/Navbar2/Navbar2';
 
 interface FormData {
   name: string;
@@ -35,16 +36,17 @@ export default function Contact() {
     <div className="flex flex-col min-h-screen">
       {/* Navbar */}
     
-        <Navbar />
+        {/* <Navbar /> */}
+        <Navbar2 />
      
 
       {/* Content section with scrollable behavior */}
       <div className="flex flex-col flex-grow overflow-hidden">
         {/* NIT Calicut Heading */}
         <div className="flex flex-col justify-center items-center p-4 bg-white">
-          <h2 className="text-[4vw] font-semibold text-black mb-6 text-center">
+          {/* <h2 className="text-[4vw] font-semibold text-black mb-6 text-center">
             National Institute of Technology Calicut
-          </h2>
+          </h2> */}
 
           {/* Contact Form */}
           <div className="bg-white shadow-md rounded-lg p-8 max-w-md w-full border-2 border-gray-300">

@@ -4,6 +4,7 @@ import React from "react";
 import Card from "./Card/Card.jsx";
 import styles from "./page.module.css";
 import Navbar from '../../components/navbar/navbar'
+import Navbar2 from "@/components/Navbar2/Navbar2";
 const workshops = [
   {
     image: "/poster.png",
@@ -75,7 +76,7 @@ const workshops = [
 export default function Workshop() {
   return (
     <>
-      <Navbar />
+      <Navbar2 />
       <div className={styles.container}>
         <h1 className={styles.title}>WORKSHOPS</h1>
 
