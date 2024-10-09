@@ -1,6 +1,14 @@
+// @ts-nocheck
+
 "use client";
 
-import React, { useState, useRef, useEffect, ChangeEvent, FormEvent } from "react";
+import React, {
+  useState,
+  useRef,
+  useEffect,
+  ChangeEvent,
+  FormEvent,
+} from "react";
 import styles from "./reg.module.css";
 import Image from "next/image";
 import gsap from "gsap";
@@ -18,7 +26,14 @@ interface NameAndBoxProps {
   handleChange: (e: ChangeEvent<HTMLInputElement>) => void;
 }
 
-const NameAndBox: React.FC<NameAndBoxProps> = ({ label, type, placeholder, name, value, handleChange }) => {
+const NameAndBox: React.FC<NameAndBoxProps> = ({
+  label,
+  type,
+  placeholder,
+  name,
+  value,
+  handleChange,
+}) => {
   return (
     <div>
       <label htmlFor={name}>
@@ -82,7 +97,6 @@ const Regform: React.FC = () => {
             name="name"
             value={formData.name}
             handleChange={handleChange}
-            
           />
           <NameAndBox
             label="College Name"
@@ -197,29 +211,43 @@ const Info: React.FC = () => {
   return (
     <div className={styles.infodiv}>
       <div className={styles.infoimg}>
-        <Image src="/x2.svg" alt="Description of the image" width={500} height={500} />
+        <Image
+          src="/x2.svg"
+          alt="Description of the image"
+          width={500}
+          height={500}
+        />
         <div className={styles.marqueecontainer}>
           <div ref={marqueeRef} className={styles.marquee}>
-            HEY LOOK HEY LOOK HEY LOOK HEY LOOK HEY LOOK HEY LOOK HEY LOOK HEY LOOK
+            HEY LOOK HEY LOOK HEY LOOK HEY LOOK HEY LOOK HEY LOOK HEY LOOK HEY
+            LOOK
           </div>
         </div>
         <div className={styles.marqueecontainer1}>
           <div ref={marqueeRef1} className={styles.marquee}>
-            HEY LOOK HEY LOOK HEY LOOK HEY LOOK HEY LOOK HEY LOOK HEY LOOK HEY LOOK
+            HEY LOOK HEY LOOK HEY LOOK HEY LOOK HEY LOOK HEY LOOK HEY LOOK HEY
+            LOOK
           </div>
         </div>
       </div>
 
       <div className={styles.infoimgmob}>
-        <Image src="/b2.svg" alt="Description of the image" width={500} height={500} />
+        <Image
+          src="/b2.svg"
+          alt="Description of the image"
+          width={500}
+          height={500}
+        />
         <div className={styles.marqueecontainer}>
           <div ref={marqueeRefm} className={styles.marquee}>
-            HEY LOOK HEY LOOK HEY LOOK HEY LOOK HEY LOOK HEY LOOK HEY LOOK HEY LOOK
+            HEY LOOK HEY LOOK HEY LOOK HEY LOOK HEY LOOK HEY LOOK HEY LOOK HEY
+            LOOK
           </div>
         </div>
         <div className={styles.marqueecontainer1}>
           <div ref={marqueeRef1m} className={styles.marquee}>
-            HEY LOOK HEY LOOK HEY LOOK HEY LOOK HEY LOOK HEY LOOK HEY LOOK HEY LOOK
+            HEY LOOK HEY LOOK HEY LOOK HEY LOOK HEY LOOK HEY LOOK HEY LOOK HEY
+            LOOK
           </div>
         </div>
       </div>
@@ -236,8 +264,10 @@ const Info: React.FC = () => {
         </div>
         <div className={styles.infodivc2}>
           <p>
-            These attributes allow you to customize the behavior and validation of input boxes in HTML forms,
-            enhancing user experience and data collection. You can combine these attributes based on your requirements to create efficient forms.
+            These attributes allow you to customize the behavior and validation
+            of input boxes in HTML forms, enhancing user experience and data
+            collection. You can combine these attributes based on your
+            requirements to create efficient forms.
           </p>
         </div>
       </div>

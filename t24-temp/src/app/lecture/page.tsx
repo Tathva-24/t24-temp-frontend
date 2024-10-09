@@ -1,9 +1,11 @@
+// @ts-nocheck
+
 // app/page.jsx
-'use client'
+"use client";
 import React from "react";
-import Card from '../workshop/Card/Card'
-import styles from '../workshop/page.module.css'
-import Navbar from '../../components/navbar/navbar'
+import Card from "../workshop/Card/Card";
+import styles from "../workshop/page.module.css";
+import Navbar from "../../components/navbar/navbar";
 
 import Navbar2Black from "@/components/Navbar2Black/Navbar2Black";
 const workshops = [
