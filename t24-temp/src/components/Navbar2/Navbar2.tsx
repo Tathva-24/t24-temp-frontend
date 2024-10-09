@@ -1,8 +1,8 @@
-'use client';
-import React, { useState, useRef } from 'react';
-import styles from './navbar2.module.css';
-import Link from 'next/link';
-import { gsap } from 'gsap';
+"use client";
+import React, { useState, useRef } from "react";
+import styles from "./navbar2.module.css";
+import Link from "next/link";
+import { gsap } from "gsap";
 
 export default function Navbar2() {
   const [isOpen, setIsOpen] = useState(false);
@@ -13,34 +13,50 @@ export default function Navbar2() {
 
     if (!isOpen) {
       gsap.to(menuRef.current, {
-        height: '100vh', // Set height to full screen when open
+        height: "100vh", // Set height to full screen when open
         duration: 0.5,
-        ease: 'power2.out',
+        ease: "power2.out",
       });
     } else {
       gsap.to(menuRef.current, {
         height: 0, // Collapse the menu when closed
         duration: 0.5,
-        ease: 'power2.out',
+        ease: "power2.out",
       });
     }
   };
 
   return (
-    <div className={`${styles.main} w-screen z-20 absolute top-0 left-0 font-kodeMono `}>
+    <div
+      className={`${styles.main} w-screen z-20 absolute top-0 left-0 font-kodeMono `}
+    >
       <div className={`${styles.navbar}`}>
         {/* Desktop Menu */}
-        <div className={`${styles.desktopMenu} flex justify-evenly items-center w-screen `}>
-          <Link href='/' className={`${styles.navItem} text-white flex items-center justify-center hover:scale-110 transition-all h-10 w-max px-6`}>
+        <div
+          className={`${styles.desktopMenu} mt-8 mx-auto w-[70vw] flex justify-evenly items-center w-screen `}
+        >
+          <Link
+            href="/"
+            className={`${styles.navItem} text-white flex items-center justify-center hover:scale-110 transition-all h-10 w-max px-6`}
+          >
             Home
           </Link>
-          <Link href='/workshop' className={`${styles.navItem} text-white flex items-center justify-center hover:scale-110 transition-all h-10 w-max px-6 duration-300`}>
+          <Link
+            href="/workshop"
+            className={`${styles.navItem} text-white flex items-center justify-center hover:scale-110 transition-all h-10 w-max px-6 duration-300`}
+          >
             Workshop
           </Link>
-          <Link href='/lecture' className={`${styles.navItem} text-white flex items-center justify-center hover:scale-110 transition-all h-10 w-max px-6 duration-300`}>
+          <Link
+            href="/lecture"
+            className={`${styles.navItem} text-white flex items-center justify-center hover:scale-110 transition-all h-10 w-max px-6 duration-300`}
+          >
             Lecture
           </Link>
-          <Link href='/contact' className={`${styles.navItem} text-white flex items-center justify-center hover:scale-110 transition-all h-10 w-max px-6 duration-300`}>
+          <Link
+            href="/contact"
+            className={`${styles.navItem} text-white flex items-center justify-center hover:scale-110 transition-all h-10 w-max px-6 duration-300`}
+          >
             Contact
           </Link>
         </div>
@@ -53,17 +69,32 @@ export default function Navbar2() {
         </div>
 
         {/* Mobile Menu */}
-        <div ref={menuRef} className={`${styles.menu} h-screen w-screen flex flex-col justify-evenly items-center font-kodeMono `}>
-          <Link href='/' className={`${styles.navItem} text-white hover:bg-slate-50 hover:bg-opacity-30 h-full flex-grow-0 flex items-center justify-center transition-all w-full px-6`}>
+        <div
+          ref={menuRef}
+          className={`${styles.menu} h-screen w-screen flex flex-col justify-evenly items-center font-kodeMono `}
+        >
+          <Link
+            href="/"
+            className={`${styles.navItem} text-white hover:bg-slate-50 hover:bg-opacity-30 h-full flex-grow-0 flex items-center justify-center transition-all w-full px-6`}
+          >
             Home
           </Link>
-          <Link href='/workshop' className={`${styles.navItem} text-white hover:bg-slate-50 hover:bg-opacity-30 h-full flex-grow-0 flex items-center justify-center transition-all w-full px-6 duration-300`}>
+          <Link
+            href="/workshop"
+            className={`${styles.navItem} text-white hover:bg-slate-50 hover:bg-opacity-30 h-full flex-grow-0 flex items-center justify-center transition-all w-full px-6 duration-300`}
+          >
             Workshop
           </Link>
-          <Link href='/lecture' className={`${styles.navItem} text-white hover:bg-slate-50 hover:bg-opacity-30 h-full flex-grow-0 flex items-center justify-center transition-all w-full px-6 duration-300`}>
+          <Link
+            href="/lecture"
+            className={`${styles.navItem} text-white hover:bg-slate-50 hover:bg-opacity-30 h-full flex-grow-0 flex items-center justify-center transition-all w-full px-6 duration-300`}
+          >
             Lecture
           </Link>
-          <Link href='/contact' className={`${styles.navItem} text-white hover:bg-slate-50 hover:bg-opacity-30 h-full flex-grow-0 flex items-center justify-center transition-all w-full px-6 duration-300`}>
+          <Link
+            href="/contact"
+            className={`${styles.navItem} text-white hover:bg-slate-50 hover:bg-opacity-30 h-full flex-grow-0 flex items-center justify-center transition-all w-full px-6 duration-300`}
+          >
             Contact
           </Link>
         </div>
