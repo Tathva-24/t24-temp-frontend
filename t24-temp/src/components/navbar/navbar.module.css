@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans&display=swap');
+
+.main {
+  background-color: transparent;
+  width: 100vw;
+  height: auto;
+}
+
+.navbar {
+  display: flex;
+  justify-content:space-around;
+  align-items: center;
+  padding: 2rem;
+  z-index: -1;
+}
+
+.navItem {
+  width: 18vh;    
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(to bottom right, #9096ea, #6165ef); /* Gradient background */
+  position: relative;
+  list-style: none;
+  text-decoration: none;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-size: 1vw; /* Start with 1vw */
+  text-transform: uppercase;
+  padding: 0.7vw;
+  color: white;
+  font-weight: 1000;
+
+  clip-path: polygon(0 0, 75% 0, 100% 25%, 100% 100%, 25% 100%, 0 75%);
+  cursor: pointer;
+  transition: background-color 0.5s ease, color 0.2s ease; /* Smooth background and color transition */
+}

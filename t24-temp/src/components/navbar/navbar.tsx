@@ -1,20 +1,25 @@
-"use client";
-import React from "react";
-import { NavElem } from "./navelem";
+'use client';
+import React from 'react';
+import styles from './navbar.module.css';
+import Link from 'next/link';
 
-export const NavBar: React.FC = () => {
-  const handleClick = (name: string) => {
-    console.log(`${name} clicked!`);
-  };
-
+export default function Navbar() {
   return (
-    <nav className="fixed top-0 left-0 w-full z-[99] flex justify-center py-4 mt-[7vh]">
-      <div className="flex space-x-8">
-        <NavElem title="HOME" onClick={() => handleClick("HOME")} />
-        <NavElem title="WORKSHOP" onClick={() => handleClick("WORKSHOP")} />
-        <NavElem title="LECTURE" onClick={() => handleClick("LECTURE")} />
-        <NavElem title="CONTACTS" onClick={() => handleClick("CONTACTS")} />
+    <div className={styles.main}>
+      <div className={styles.navbar}>
+        <Link href='/' className={styles.navItem}>
+          Home
+        </Link>
+        <Link href='/workshop' className={styles.navItem}>
+          Workshop
+        </Link>
+        <Link href='/lecture' className={styles.navItem}>
+          Lecture
+        </Link>
+        <Link href='/contact' className={styles.navItem}>
+          Contact
+        </Link>
       </div>
-    </nav>
+    </div>
   );
-};
+}
