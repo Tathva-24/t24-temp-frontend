@@ -15,6 +15,12 @@ import gsap from "gsap";
 import Infocont from "./infoconweb";
 import InfoconMob from "./infoconmob";
 import { motion } from "framer-motion";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+import { MotionPathPlugin } from "gsap/MotionPathPlugin";
+import { CSSRulePlugin } from "gsap/CSSRulePlugin";
+import { Draggable } from "gsap/Draggable";
+
+gsap.registerPlugin(ScrollTrigger, MotionPathPlugin, CSSRulePlugin, Draggable);
 
 // Define types for NameAndBox props
 interface NameAndBoxProps {
@@ -134,13 +140,6 @@ const Regform: React.FC = () => {
     </>
   );
 };
-
-import { ScrollTrigger } from "gsap/ScrollTrigger";
-import { MotionPathPlugin } from "gsap/MotionPathPlugin";
-import { CSSRulePlugin } from "gsap/CSSRulePlugin";
-import { Draggable } from "gsap/Draggable";
-
-gsap.registerPlugin(ScrollTrigger, MotionPathPlugin, CSSRulePlugin, Draggable);
 
 const Info: React.FC = () => {
   const marqueeRef = useRef<HTMLDivElement>(null);
@@ -278,13 +277,18 @@ const Info: React.FC = () => {
   );
 };
 
-// Define types for Modal props
+// @ts-ignore
 interface ModalProps {
   isOpen: boolean;
-  onClose: () => void;
 }
 
-const Modal: React.FC<ModalProps> = ({ isOpen, onClose }) => {
+// @ts-ignore
+const Modal: React.FC<ModalProps> = ({ isOpen }) => {
+  // @ts-ignore
+
+  if (!isOpen) return null; // If not open, render nothing
+
+  // @ts-ignore
   return (
     <motion.div
       className={styles.modalBackdrop}
@@ -302,9 +306,7 @@ const Modal: React.FC<ModalProps> = ({ isOpen, onClose }) => {
       >
         <div className={styles.main}>
           <div className={styles.page}>
-            <button className={styles.closeButton} onClick={onClose}>
-              X
-            </button>
+            <button className={styles.closeButton}>X</button>
             <div className={styles.form}>
               <Info />
               <Regform />
@@ -316,4 +318,5 @@ const Modal: React.FC<ModalProps> = ({ isOpen, onClose }) => {
   );
 };
 
+// @ts-ignore
 export default Modal;
