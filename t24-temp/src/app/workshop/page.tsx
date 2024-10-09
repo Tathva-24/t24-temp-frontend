@@ -6,37 +6,21 @@ import styles from "./page.module.css";
 // import Navbar from '../../components/navbar/navbar'
 import Navbar2Black from "@/components/Navbar2Black/Navbar2Black";
 
-const workshops = [
-  {
-    image: "/workshops/devops.jpeg",
-    heading: "Workshop - Accelerate Innovation",
-    description:
-      "Accelerate Innovation : Master DevOps to Streamline Development, Automate Workflows, and Drive Continuous Delivery. Join us at the TATHVA workshop to unlock the power of seamless collaboration, and embrace the tech journey under our insightful experts",
-    price: "₹999",
-    date: "October 25, 2024",
-    link: "https://tiqr.events/e/Workshop---Accelerate-Innovation--287"
-  },
-  {
-    image: "/workshops/cyber.jpeg",
-    heading: "CyberForensic And Data Security",
-    description:
-      "Gear up for an exciting Cyberforensic and Data Security Workshop at Tathva’24, powered by Techbyheart! Dive into real-world digital forensics, learn how to protect sensitive data, and master the latest in cybersecurity defenses.",
-    price: "₹999",
-    date: "October 25, 2024",
-    link: "https://tiqr.events/e/Workshop---CyberForensic-And-Data-Security--285"
+const CMS_URL = "https://cms.tathva.org";
+const CMS_API_TOKEN = "daf1d4fd1e2b55fae1379ca1b36fbb2e3cc2ad02e5a723166f129817950b4b333582c9d8a6e8ede49bcf82252fa130154123f1b3c0d70667f10cefd70f653ed17f07cf3f6095d3f66d50fc9ce08f1f3ef0455f12c78e507667394f202e4eb0aecd98e0c0675f651d42b6285a9f043a8515d30be9b681f2c503b627a05042fd85"
 
-  },
-  {
-    image: "/workshops/AWS.jpeg",
-    heading: "Amazon Web Services",
-    description:
-      "Enter the cloud and explore the domain of flexible and fast networking⚡. Join us at Tathva’24, Amazon Web Services workshop and delve through the facets of cloud computing🌩, servers and data management.",
-    price: "₹999",
-    date: "October 25, 2024",
-    link: "https://tiqr.events/e/Workshop---Amazon-Web-Services--286"
+const res = await fetch(CMS_URL + '/api/workshops?populate=posterImage', {
+	method: 'GET',
+	headers: {
+		'Content-Type': 'application/json',
+		'Authorization': 'Bearer ' + CMS_API_TOKEN, // Optional, if needed
+	}
+});
+const data = await res.json();
+console.log(data);
+//console.log(workshops);
+const workshops = data.data;
 
-  },
-];
 
 export default function Workshop() {
   return (
@@ -50,12 +34,12 @@ export default function Workshop() {
           {workshops.map((workshop, index) => (
             <Card
               key={index}
-              image={workshop.image}
-              heading={workshop.heading}
+              image={CMS_URL + workshop.posterImage.url}
+              heading={workshop.name}
               description={workshop.description}
-              price={workshop.price}
-              date={workshop.date}
-              link={workshop.link}
+              price={"₹" + workshop.regPrice}
+              date={workshop.eventDate}
+              link={workshop.regLink}
             />
           ))}
         </div>
