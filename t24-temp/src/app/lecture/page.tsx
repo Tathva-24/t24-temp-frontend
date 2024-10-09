@@ -1,79 +1,15 @@
-// @ts-nocheck
 
 // app/page.jsx
 "use client";
 import React from "react";
 import Card from "../workshop/Card/Card";
 import styles from "../workshop/page.module.css";
-import Navbar from "../../components/navbar/navbar";
+// import Navbar from "../../components/navbar/navbar";
 
 import Navbar2Black from "@/components/Navbar2Black/Navbar2Black";
 const workshops = [
-  {
-    image: "/poster.png",
-    heading: "Real Madrid VS BVB",
-    description:
-      "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.",
-    price: "₹990",
-    date: "1, June 2024",
-  },
-  {
-    image: "/poster.png",
-    heading: "Real Madrid VS BVB",
-    description:
-      "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.",
-    price: "₹1200",
-    date: "1, June 2024",
-  },
-  {
-    image: "/poster.png",
-    heading: "Real Madrid VS BVB",
-    description:
-      "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.",
-    price: "₹1200",
-    date: "1, June 2024",
-  },
-  {
-    image: "/poster.png",
-    heading: "Real Madrid VS BVB",
-    description:
-      "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.",
-    price: "₹1200",
-    date: "1, June 2024",
-  },
-  {
-    image: "/poster.png",
-    heading: "Real Madrid VS BVB",
-    description:
-      "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.",
-    price: "₹1200",
-    date: "1, June 2024",
-  },
-  {
-    image: "/poster.png",
-    heading: "Real Madrid VS BVB",
-    description:
-      "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.",
-    price: "₹1200",
-    date: "1, June 2024",
-  },
-  {
-    image: "/poster.png",
-    heading: "Real Madrid VS BVB",
-    description:
-      "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.",
-    price: "₹1200",
-    date: "1, June 2024",
-  },
-
-  {
-    image: "/poster.png",
-    heading: "Real Madrid VS BVB",
-    description:
-      "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.",
-    price: "₹1500",
-    date: "1, June 2024",
-  },
+  
+  
 ];
 
 export default function Workshop() {
@@ -93,6 +29,7 @@ export default function Workshop() {
               description={workshop.description}
               price={workshop.price}
               date={workshop.date}
+              link={workshop.link}
             />
           ))}
         </div>

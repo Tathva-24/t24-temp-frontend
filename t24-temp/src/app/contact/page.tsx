@@ -1,8 +1,8 @@
 'use client';
 
 import React, { useState, ChangeEvent, FormEvent } from 'react';
-import Navbar from '../../components/navbar/navbar';
-import { HeroHighlight } from "../../components/ui/hero-highlight";
+// import Navbar from '../../components/navbar/navbar';
+// import { HeroHighlight } from "../../components/ui/hero-highlight";
 import Navbar2Black from '@/components/Navbar2Black/Navbar2Black';
 
 interface FormData {
