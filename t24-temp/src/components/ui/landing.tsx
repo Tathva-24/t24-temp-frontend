@@ -6,7 +6,6 @@ export default function Landing() {
       <div
         className={`h-screen w-screen flex flex-col justify-between text-white font-kodeMono`}
       >
-        {" "}
         <Navbar2 />
         <div className="contatiner flex flex-col justify-center items-center text-white font-kodeMono h-full">
           <h1 className="text-[15vw] md:text-[8vw]">TATHVA&#39;24</h1>
