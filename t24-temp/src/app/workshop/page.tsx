@@ -8,7 +8,7 @@ import Navbar2Black from "@/components/Navbar2Black/Navbar2Black";
 
 const workshops = [
   {
-    image: "/poster.png",
+    image: "/workshops/devops.jpeg",
     heading: "Workshop - Accelerate Innovation",
     description:
       "Accelerate Innovation : Master DevOps to Streamline Development, Automate Workflows, and Drive Continuous Delivery. Join us at the TATHVA workshop to unlock the power of seamless collaboration, and embrace the tech journey under our insightful experts",
@@ -17,7 +17,7 @@ const workshops = [
     link: "https://tiqr.events/e/Workshop---Accelerate-Innovation--287"
   },
   {
-    image: "/poster.png",
+    image: "/workshops/cyber.jpeg",
     heading: "CyberForensic And Data Security",
     description:
       "Gear up for an exciting Cyberforensic and Data Security Workshop at Tathva’24, powered by Techbyheart! Dive into real-world digital forensics, learn how to protect sensitive data, and master the latest in cybersecurity defenses.",
@@ -27,7 +27,7 @@ const workshops = [
 
   },
   {
-    image: "/poster.png",
+    image: "/workshops/AWS.jpeg",
     heading: "Amazon Web Services",
     description:
       "Enter the cloud and explore the domain of flexible and fast networking⚡. Join us at Tathva’24, Amazon Web Services workshop and delve through the facets of cloud computing🌩, servers and data management.",
