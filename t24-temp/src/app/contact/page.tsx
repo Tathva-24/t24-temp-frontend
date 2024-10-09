@@ -41,7 +41,7 @@ export default function Contact() {
      
 
       {/* Content section with scrollable behavior */}
-      <div className="flex flex-col flex-grow overflow-hidden">
+      <div className="flex flex-col flex-grow overflow-hidden mt-32">
         {/* NIT Calicut Heading */}
         <div className="flex flex-col justify-center items-center p-4 bg-white">
           {/* <h2 className="text-[4vw] font-semibold text-black mb-6 text-center">

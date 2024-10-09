@@ -78,7 +78,7 @@ export default function Workshop() {
   return (
     <>
       <Navbar2Black />
-      <div className={styles.container}>
+      <div className={`${styles.container} font-kodeMono mt-20 `}>
         <h1 className={styles.title}>WORKSHOPS</h1>
 
         {/* Container for the workshops */}

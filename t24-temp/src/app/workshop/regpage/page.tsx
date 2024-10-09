@@ -32,7 +32,7 @@ const NameAndBox: React.FC<NameAndBoxProps> = ({ label, type, placeholder, name,
         value={value}
         onChange={handleChange}
         required
-        className={styles.inputbox}
+        className={`${styles.inputbox} bg-neutral-800 text-neutral-200`}
       />
     </div>
   );
@@ -73,7 +73,7 @@ const Regform: React.FC = () => {
   return (
     <>
       <form className={styles.regformdiv} onSubmit={handleSubmit}>
-        <div className={styles.regformhead}>Register here</div>
+        <div className={styles.regformhead}>COMING SOON</div>
         <div className={styles.regforma}>
           <NameAndBox
             label="Name"
@@ -82,6 +82,7 @@ const Regform: React.FC = () => {
             name="name"
             value={formData.name}
             handleChange={handleChange}
+            
           />
           <NameAndBox
             label="College Name"
@@ -111,7 +112,7 @@ const Regform: React.FC = () => {
         <div className={styles.paydiv}>
           <div className={styles.buttonshadow}>
             <button className={styles.regbutton} type="submit">
-              Pay Now
+              COMING SOON
             </button>
           </div>
         </div>

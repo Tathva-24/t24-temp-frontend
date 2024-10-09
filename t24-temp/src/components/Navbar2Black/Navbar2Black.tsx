@@ -4,7 +4,7 @@ import styles from './navbar2.module.css';
 import Link from 'next/link';
 import { gsap } from 'gsap';
 
-export default function Navbar2Black() {
+export default function Navbar2() {
   const [isOpen, setIsOpen] = useState(false);
   const menuRef = useRef(null);
 
@@ -27,7 +27,7 @@ export default function Navbar2Black() {
   };
 
   return (
-    <div className={`${styles.main} w-screen z-20`}>
+    <div className={`${styles.main} w-screen z-20 absolute top-0 font-kodeMono  left-0`}>
       <div className={`${styles.navbar}`}>
         {/* Desktop Menu */}
         <div className={`${styles.desktopMenu} flex justify-evenly items-center w-screen `}>
