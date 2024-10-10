@@ -20,6 +20,7 @@
   border-radius: 16px; /* Inner border radius */
   padding: 16px;
   max-width: 300px;
+  min-height: 590px;
   margin-bottom: 0%;
   position: relative; /* Allow absolute positioning of the button */
 
@@ -69,6 +70,7 @@
 /* Button positioning and styling */
 .buyButton {
   background-color: #eff0fc;
+  position: absolute;
   color: #00004f;
   border: none;
   padding: 5px 20px;

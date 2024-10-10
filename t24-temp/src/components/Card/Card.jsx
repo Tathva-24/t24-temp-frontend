@@ -31,11 +31,11 @@ const Card = ({ image, heading, description, price, date, link }) => {
 
   return (
     <>
-      <div className={styles.cardContainer}>
+      <div className={`${styles.cardContainer} `}>
         <div className={styles.card}>
           <img src={image} alt={heading} className={styles.image} />
           <h3 className={styles.h3}>{heading}</h3>
-          <p className={styles.p}>{description}</p>
+          <p className={styles.p}>{description.slice(0, 200) + (description.length > 200 ? "..." : "")}</p>
           <p className={styles.price}>{price}</p>
           <p className={styles.date}>{date}</p>
           
