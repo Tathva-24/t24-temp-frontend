@@ -18,6 +18,7 @@
     "jsx": "preserve",
     "incremental": true,
     "noErrorTruncation": true,
+    "target": "es2017",
     "plugins": [
       {
         "name": "next"
