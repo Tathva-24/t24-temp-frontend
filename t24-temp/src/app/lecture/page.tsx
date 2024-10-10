@@ -2,7 +2,7 @@
 // app/page.jsx
 "use client";
 import React from "react";
-import Card from "../workshop/Card/Card";
+import Card from "../../components/Card/Card";
 import styles from "../workshop/page.module.css";
 // import Navbar from "../../components/navbar/navbar";
 

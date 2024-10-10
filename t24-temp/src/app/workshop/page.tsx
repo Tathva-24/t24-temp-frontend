@@ -1,7 +1,7 @@
 // app/page.jsx
 'use client'
 import React from "react";
-import Card from "./Card/Card.jsx";
+import Card from "../../components/Card/Card.jsx";
 import styles from "./page.module.css";
 // import Navbar from '../../components/navbar/navbar'
 import Navbar2Black from "@/components/Navbar2Black/Navbar2Black";
