@@ -3,7 +3,7 @@
 import React from "react";
 import Card from "../../components/Card/Card";
 import styles from "../workshop/page.module.css";
-import ComingSoon from "../../components/ComingSoon/ComingSoon.tsx";
+import ComingSoon from "../../components/ComingSoon/ComingSoon";
 
 import Navbar2Black from "@/components/Navbar2Black/Navbar2Black";
 const workshops = [];
