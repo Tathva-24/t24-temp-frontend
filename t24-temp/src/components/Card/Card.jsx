@@ -23,7 +23,7 @@ const Card = ({ image, heading, description, price, date, link }) => {
   //     document.body.classList.remove(styles.blur); // Remove blur effect from body
   //   }
 
-    // Clean up class on component unmount
+  // Clean up class on component unmount
   //   return () => {
   //     document.body.classList.remove(styles.blur);
   //   };
@@ -34,18 +34,26 @@ const Card = ({ image, heading, description, price, date, link }) => {
       <div className={`${styles.cardContainer} `}>
         <div className={styles.card}>
           <img src={image} alt={heading} className={styles.image} />
+          <div className={styles.heading}>
           <h3 className={styles.h3}>{heading}</h3>
-          <p className={styles.p}>{description.slice(0, 200) + (description.length > 200 ? "..." : "")}</p>
-          <p className={styles.price}>{price}</p>
-          <p className={styles.date}>{date}</p>
-          
-          <button className={styles.regbutton} >
-            <a href={link}>
-              Register
-            </a>
-          {/* onClick={handleRegisterClick} */}
-              
+          </div>
+          <div className={styles.info_head}>
+          <p className={styles.p}>
+            {description.slice(0, 200) +
+              (description.length > 200 ? "..." : "")}
+          </p>
+         
+          <div className="flex justify-between items-center">
+            <div className="flex flex-col">
+            <p className={styles.price}>{price}</p>
+            <p className={styles.date}>{date}</p>
+            </div>
+            <button className={styles.regbutton}>
+              <a href={link}>Register</a>
+              {/* onClick={handleRegisterClick} */}
             </button>
+          </div>
+        </div>
         </div>
         {/* Render the Modal component only if it is open */}
       </div>
