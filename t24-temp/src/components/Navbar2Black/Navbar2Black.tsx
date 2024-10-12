@@ -48,6 +48,12 @@ export default function Navbar2() {
             Workshop
           </Link>
           <Link
+            href="/events"
+            className={`${styles.navItem} text-white flex items-center justify-center hover:scale-110 transition-all h-10 w-max px-6 duration-300`}
+          >
+            events
+          </Link>
+          <Link
             href="/lecture"
             className={`${styles.navItem} text-white flex items-center justify-center hover:scale-110 transition-all h-10 w-max px-6 duration-300`}
           >
