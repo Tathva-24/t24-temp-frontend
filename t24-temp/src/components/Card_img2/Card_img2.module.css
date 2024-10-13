@@ -1,4 +1,4 @@
-/* app/components/Card.module.css */
+
 
 /* New card container that holds the gradient border */
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap");
@@ -22,8 +22,7 @@
   max-width: 300px;
   margin-bottom: 0%;
   position: relative;
-  min-height: 540px;
-   /* Enhanced shadow */
+  height: 460px;
   box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1),
     /* Soft outer shadow */ 0 4px 6px rgba(0, 0, 0, 0.05),
     /* Slightly sharper inner shadow */ 0 20px 25px rgba(0, 0, 0, 0.1); /* Larger, more diffused shadow */

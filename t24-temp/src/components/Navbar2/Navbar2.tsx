@@ -48,6 +48,12 @@ export default function Navbar2() {
             Workshop
           </Link>
           <Link
+            href="/events"
+            className={`${styles.navItem} text-white flex items-center justify-center hover:scale-110 transition-all h-10 w-max px-6 duration-300`}
+          >
+            events
+          </Link>
+          <Link
             href="/lecture"
             className={`${styles.navItem} text-white flex items-center justify-center hover:scale-110 transition-all h-10 w-max px-6 duration-300`}
           >
@@ -84,6 +90,12 @@ export default function Navbar2() {
             className={`${styles.navItem} text-white hover:bg-slate-50 hover:bg-opacity-30 h-full flex-grow-0 flex items-center justify-center transition-all w-full px-6 duration-300`}
           >
             Workshop
+          </Link>
+          <Link
+            href="/events"
+            className={`${styles.navItem} text-white hover:bg-slate-50 hover:bg-opacity-30 h-full flex-grow-0 flex items-center justify-center transition-all w-full px-6 duration-300`}
+          >
+            Events
           </Link>
           <Link
             href="/lecture"

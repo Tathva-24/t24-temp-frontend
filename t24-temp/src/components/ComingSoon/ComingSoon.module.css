@@ -1,0 +1,26 @@
+.title{
+  font-size: 3rem;
+  font-weight: 550;
+  transition: font-size 0.5s ease;
+}
+
+@media only screen and (max-width: 900px) {
+  .title {
+    
+    font-size: 2rem;
+  }
+}
+
+@media only screen and (max-width: 750px) {
+  .title {
+    font-size: 1.5rem;
+  }
+}
+
+
+
+@media only screen and (max-width: 500px) {
+  .title {
+    font-size: 1rem;
+  }
+}

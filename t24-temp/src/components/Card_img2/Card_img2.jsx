@@ -1,8 +1,6 @@
-// app/components/Card.jsx
-"use client"; // This is necessary for client components in Next.js
-// import React, { useState, useEffect } from "react";
-import styles from "./Card.module.css";
-// import Modal from "../regpage/page"; // Ensure the correct path to your modal component
+
+"use client"; 
+import styles from "./Card_img2.module.css";
 
 const Card = ({ image, heading, description, price, date, link }) => {
   // const [isModalOpen, setIsModalOpen] = useState(false);
