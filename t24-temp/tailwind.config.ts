@@ -37,7 +37,17 @@ const config = {
       fontFamily: {
         kodeMono: ["Kode Mono", "monospace"],
         jakarta: ["Plus Jakarta Sans", "system-ui"],
+
+      
       },
+      fontWeight: {
+        200: '200',
+        300: '300',
+        400: '400',
+        500: '500',
+        600: '600',
+        700: '700',
+        800: '800',},
       colors: {
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
