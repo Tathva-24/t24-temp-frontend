@@ -77,6 +77,7 @@ export default function Navbar2() {
         {/* Mobile Menu */}
         <div
           ref={menuRef}
+          onClick={toggleMenu}
           className={`${styles.menu} h-screen w-screen flex flex-col justify-evenly items-center font-kodeMono `}
         >
           <Link

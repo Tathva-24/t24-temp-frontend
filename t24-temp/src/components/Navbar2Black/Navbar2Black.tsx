@@ -69,14 +69,15 @@ export default function Navbar2() {
 
         {/* Hamburger Icon for Mobile Menu */}
         <div className={styles.hamburger} onClick={toggleMenu}>
-          <div className={`${styles.hamburgerLine}  `} />
-          <div className={`${styles.hamburgerLine}  `} />
-          <div className={`${styles.hamburgerLine}  `} />
+          <div className={`${styles.hamburgerLine} ${isOpen ? 'bg-white' : 'bg-black'} `} />
+          <div className={`${styles.hamburgerLine} ${isOpen ? 'bg-white' : 'bg-black'}  `} />
+          <div className={`${styles.hamburgerLine} ${isOpen ? 'bg-white' : 'bg-black'}  `} />
         </div>
 
         {/* Mobile Menu */}
         <div
           ref={menuRef}
+          onClick={toggleMenu}
           className={`${styles.menu} h-screen w-screen flex flex-col justify-evenly items-center `}
         >
           <Link
