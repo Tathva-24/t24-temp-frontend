@@ -1,5 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans&display=swap");
 
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
+
 .main {
   background-color: transparent;
   width: 100vw;
@@ -24,7 +26,7 @@
   background: #cacdf8; /* Gradient background */
   text-transform: uppercase;
   font-weight: 700;
-  font-family: "Jakarta Sans", sans-serif;
+  font-family: "Plus Jakarta Sans", sans-serif;
   font-weight: 800;
   color: black;
   clip-path: polygon(0 0, 75% 0, 100% 25%, 100% 100%, 25% 100%, 0 75%);
