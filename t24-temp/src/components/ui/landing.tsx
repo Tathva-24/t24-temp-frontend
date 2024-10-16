@@ -18,9 +18,15 @@ export default function Landing() {
             <p className="mx-3">26 OCT</p>
             <p className="mx-3">27 OCT</p>
           </div>
-          <div className="mt-5">
+          <div className="mt-5 flex flex-row gap-8">
             <Link href="/workshop" className={styles.navItem}>
               Register Here
+            </Link>
+            <Link
+              href="https://tiqr.events/e/Hospitality-397"
+              className={styles.navItem}
+            >
+              Accomodation
             </Link>
           </div>
         </div>
