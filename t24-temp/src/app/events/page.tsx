@@ -7,7 +7,7 @@ import Navbar2Black from "@/components/Navbar2Black/Navbar2Black";
 
 const CMS_URL = "https://cms.tathva.org";
 const CMS_API_TOKEN =
-  "daf1d4fd1e2b55fae1379ca1b36fbb2e3cc2ad02e5a723166f129817950b4b333582c9d8a6e8ede49bcf82252fa130154123f1b3c0d70667f10cefd70f653ed17f07cf3f6095d3f66d50fc9ce08f1f3ef0455f12c78e507667394f202e4eb0aecd98e0c0675f651d42b6285a9f043a8515d30be9b681f2c503b627a05042fd85";
+  "cf24717e06945bd267da2c6b4e983642100e236a8f3484ab39a1bfa153a39ab9e0de1b2ed41fa2e3c252d5d765a6212fb02c088897569bbfa26e296acb296f3c877bfdd2b22bd707d304d8176883bea754e65e15fa768006a1d1cd9a1da1d49f95731919595be42630efd6b2fa8deed72675cf7ca46f34a511bb4e5cf0bb3d92";
 
 export default function Event() {
   const [events, setEvents] = useState([]);
