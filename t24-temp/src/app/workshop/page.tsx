@@ -7,7 +7,7 @@ import styles from "./page.module.css";
 import Navbar2Black from "@/components/Navbar2Black/Navbar2Black";
 
 const CMS_URL = "https://cms.tathva.org";
-const CMS_API_TOKEN = "daf1d4fd1e2b55fae1379ca1b36fbb2e3cc2ad02e5a723166f129817950b4b333582c9d8a6e8ede49bcf82252fa130154123f1b3c0d70667f10cefd70f653ed17f07cf3f6095d3f66d50fc9ce08f1f3ef0455f12c78e507667394f202e4eb0aecd98e0c0675f651d42b6285a9f043a8515d30be9b681f2c503b627a05042fd85";
+const CMS_API_TOKEN = "994fefbd051fa13866a7b0eed4df028a0d4b2bbbc22b1feaa23b0dfd849fc804e26750a92be9c4205fefd04c5aab555ebd2436e60f68ec0287c34e6fb7763a54b89d7239b1d73dcc1650f2eea905279f2c8eaafeed4b083294c30a8c9bdb4edefde6dea87986f992ff69a687d84d39ce2ad02c19fcbb053f57b6e29357cf7538";
 
 export default function Workshop() {
   const [workshops, setWorkshops] = useState([]);
