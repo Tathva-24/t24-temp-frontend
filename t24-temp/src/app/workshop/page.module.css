@@ -12,8 +12,10 @@
   font-size: 4rem;
   font-weight: 800;
   margin-bottom: 3rem;
-  color: #000000;
-  letter-spacing: 3vw;
+  color: white;
+  letter-spacing: 4vw;
+  /*color: #000000;
+  letter-spacing: 3vw;*/
   margin-left: 4vw;
   margin-top: 4vh;
 }
